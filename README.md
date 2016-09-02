@@ -1,1 +1,1 @@
-#React Skeleton using Webpack
+## Simple [promotional website](http://squatrightapp.com/) for SquatRight built using React & Webpack. Download it on [The App Store](https://itunes.apple.com/us/app/squatright-better-squat-depth/id1082538357?mt=8).
