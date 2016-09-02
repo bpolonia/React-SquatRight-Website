@@ -11,8 +11,8 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.json$/,
-        loader: 'json'
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader?limit=8192!img?progressive=true'
       },
       {
         test: /\.js$/,
@@ -40,5 +40,8 @@ module.exports = {
     colors: true,
     inline: true,
     hot: true
+  },
+  resolve: {
+    extensions: ['', '.js', '.css']
   }
 }

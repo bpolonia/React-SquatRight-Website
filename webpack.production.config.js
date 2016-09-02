@@ -11,8 +11,8 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.json$/,
-        loader: "json"
+        test: /\.(png|jpg|gif)$/,
+        loader: 'url-loader?limit=8192!img?progressive=true'
       },
       {
         test: /\.js$/,

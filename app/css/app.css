@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-weight: 700;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  box-shadow: inset 0px 0px 70px -10px rgba(0,0,0,0.67);
+  position: relative;
+}
+.imageContainer {
+  flex: 4.5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+.iPhone {
+  height: 600px;
+  width: 300px;
+  background: url('../images/iPhone.png') no-repeat center/ contain;
+  position: relative;
+}
+
+.iPhone img {
+  border: 1px solid black;
+  border-radius: 1px;
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  left: 49px;
+}
+
+.contentContainer {
+  flex: 5;
+}
+.copyContainer {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 45px;
+}
+.logo {
+  width: 100%;
+}
+
+.copyContainer .appStore {
+  width: 200px;
+}
+
+.copyrightDesktop {
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  .iPhone {
+    margin-right: 20px;
+  }
+  .container {
+    height: 100%;
+  }
+  .copyrightMobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+  }
+  .logo {
+    width: 100%;
+    align-self: center;
+    margin-left: 0;
+  }
+  .appStore {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: -20px;
+  }
+  .copyrightMobile {
+    position: absolute;
+    display: block;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 6px;
+  }
+  .copyrightDesktop {
+    display: none;
+  }
+}
